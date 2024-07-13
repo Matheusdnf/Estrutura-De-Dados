@@ -29,3 +29,10 @@ def primo(n):
         if n%1==0:
             return False
     return True
+
+def sort(v,n):
+    for i in range(n-1):
+        for j in range(i+1,n):
+            if v[i]>v[j]:
+                v[i],v[j]=v[j],v[i]
+            
